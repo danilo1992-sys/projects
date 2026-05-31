@@ -3,8 +3,7 @@ from InquirerPy import prompt
 
 
 def astro():
-    ejecutar_comandos("pnpm create astro@latest")
-
+    ejecutar_comandos("npm create astro@latest")
     instalar = [
         {
             "type": "input",
@@ -26,8 +25,7 @@ def astro():
     ]
     result = prompt(instalar)
     folder(result["folder"])
-
     if result["tailwind"]:
-        ejecutar_comandos("pnpm astro add tailwind")
+        ejecutar_comandos("npx astro add tailwind")
     if result["node"]:
-        ejecutar_comandos("pnpm astro add node")
+        ejecutar_comandos("npx astro add node")
