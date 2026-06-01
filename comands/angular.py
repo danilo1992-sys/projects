@@ -28,3 +28,6 @@ def angular():
 
     if result["tailwind"]:
         spinner(f"cd {result['folder']} && ng add @tailwindcss/postcss")
+        print(
+            "Deve configurar la instalacion https://tailwindcss.com/docs/installation/framework-guides/angular"
+        )

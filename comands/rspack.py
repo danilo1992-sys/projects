@@ -1,10 +1,9 @@
-from comands.utils import spinner, folder
+from comands.utils import ejecutar_comandos, folder
 from InquirerPy import prompt
 
 
-def vite():
-    spinner("npm create vite@latest")
-
+def rspcak():
+    ejecutar_comandos("npm create rsbuild@latest")
     instalar = [
         {
             "type": "input",
@@ -23,7 +22,9 @@ def vite():
     folder(result["folder"])
 
     if result["tailwind"]:
-        spinner("npm install tailwindcss @tailwindcss/vite")
+        ejecutar_comandos(
+            "npm install tailwindcss @tailwindcss/postcss postcss postcss-loader"
+        )
         print(
-            "Deve configurar la instalacion https://tailwindcss.com/docs/installation/using-vite"
+            "Deve configurar la instalacion https://tailwindcss.com/docs/installation/framework-guides/rspack/react"
         )

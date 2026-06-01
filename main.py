@@ -1,17 +1,19 @@
 from InquirerPy import prompt
+from comands.astro import astro
+from comands.vite import vite
+from comands.uv import uv_submenu
+from comands.angular import angular
+from comands.rspack import rspcak
 
 
 def main():
-    from comands.astro import astro
-    from comands.vite import vite
-    from comands.uv import uv_submenu
-    from comands.angular import angular
 
     opciones = {
         "Astro": astro,
         "Vite": vite,
         "UV": uv_submenu,
         "Angular": angular,
+        "Rspack": rspcak,
     }
 
     while True:
