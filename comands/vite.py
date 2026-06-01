@@ -1,10 +1,9 @@
-from comands.utils import ejecutar_comandos, folder
+from comands.utils import spinner, folder
 from InquirerPy import prompt
-from main import main
 
 
 def vite():
-    ejecutar_comandos("npm create vite@latest")
+    spinner("npm create vite@latest")
 
     instalar = [
         {
@@ -24,11 +23,9 @@ def vite():
     folder(result["folder"])
 
     if result["tailwind"]:
-        ejecutar_comandos("npm install tailwindcss @tailwindcss/vite")
-        main()
+        spinner("npm install tailwindcss @tailwindcss/vite")
         print(
-            "Deve configurar la inatlacion https://tailwindcss.com/docs/installation/using-vite"
+            "Deve configurar la instalacion https://tailwindcss.com/docs/installation/using-vite"
         )
     else:
-        main()
         print("Volviendo al menu principal")

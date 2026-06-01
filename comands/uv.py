@@ -1,6 +1,6 @@
 from InquirerPy import prompt
 
-from comands.utils import ejecutar_comandos
+from comands.utils import spinner
 
 
 def uv_submenu():
@@ -14,4 +14,4 @@ def uv_submenu():
     ]
     result = prompt(preguntas)
     name = result["name"]
-    ejecutar_comandos(f"uv init {name}")
+    spinner(f"uv init {name}")

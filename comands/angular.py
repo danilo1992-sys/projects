@@ -1,9 +1,14 @@
-from comands.utils import spinner, folder
+from comands.utils import spinner, comprobar, folder
 from InquirerPy import prompt
 
 
-def astro():
-    spinner("npm create astro@latest")
+def angular():
+    if not comprobar("ng"):
+        print("[!] ng no esta instalado en el sistema")
+        spinner("npm install -g @angular/cli")
+    else:
+        print("[*] ng ya esta instalado")
+
     instalar = [
         {
             "type": "input",
@@ -16,16 +21,10 @@ def astro():
             "name": "tailwind",
             "default": True,
         },
-        {
-            "type": "confirm",
-            "message": "Desea instalar node como adaptador",
-            "name": "node",
-            "default": True,
-        },
     ]
     result = prompt(instalar)
     folder(result["folder"])
+    spinner(f"ng new {result['folder']}")
+
     if result["tailwind"]:
-        spinner("npx astro add tailwind")
-    if result["node"]:
-        spinner("npx astro add node")
+        spinner(f"cd {result['folder']} && ng add @tailwindcss/postcss")
