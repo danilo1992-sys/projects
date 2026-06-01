@@ -1,5 +1,6 @@
 from InquirerPy import prompt
 from comands.astro import astro
+from comands.vite import vite
 
 
 def main():
@@ -9,13 +10,14 @@ def main():
             "message": "Creador de proyectos de Nodejs, Python y Go",
             "choices": [
                 "Astro",
-                "Svelte",
+                "Vite",
                 "Angular",
                 "UV",
                 "Rspack",
                 "Flowbite",
                 "Go",
                 "Bun",
+                "Bash",
                 "Salir",
             ],
             "name": "opcion",
@@ -25,6 +27,7 @@ def main():
 
     if result["opcion"] == "Astro":
         astro()
+    elif result["opcion"] == "Vite"
 
 
 if __name__ == "__main__":
