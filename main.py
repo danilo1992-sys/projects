@@ -4,6 +4,8 @@ from comands.vite import vite
 from comands.uv import uv_submenu
 from comands.angular import angular
 from comands.rspack import rspcak
+from comands.flowbite import flowbite
+from comands.bun import bun
 
 
 def main():
@@ -14,6 +16,8 @@ def main():
         "UV": uv_submenu,
         "Angular": angular,
         "Rspack": rspcak,
+        "Flowbite": flowbite,
+        "Bun": bun,
     }
 
     while True:
