@@ -1,4 +1,4 @@
-from comands.utils import spinner, folder
+from comands.utils import spinner
 from InquirerPy import prompt
 
 

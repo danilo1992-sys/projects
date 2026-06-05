@@ -6,6 +6,8 @@ from comands.angular import angular
 from comands.rspack import rspcak
 from comands.flowbite import flowbite
 from comands.bun import bun
+from comands.go import go
+from comands.bash import bash
 
 
 def main():
@@ -17,7 +19,9 @@ def main():
         "Angular": angular,
         "Rspack": rspcak,
         "Flowbite": flowbite,
+        "Go": go,
         "Bun": bun,
+        "Bash": bash,
     }
 
     while True:
