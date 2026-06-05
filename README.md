@@ -1,6 +1,6 @@
 # Projects
 
-CLI para crear proyectos de Node.js, Python y Go con las frameworks más populares.
+CLI para crear proyectos de Node.js, Python, Go y Bash con las frameworks más populares.
 
 ## Instalación
 
@@ -23,6 +23,10 @@ uv run main.py
 | Angular   | Proyecto Angular |
 | UV        | Proyecto Python con UV |
 | Rspack    | Proyecto con Rspack |
+| Flowbite  | Proyecto React con Flowbite |
+| Go        | Proyecto Go con go mod |
+| Bun       | Proyecto JavaScript con Bun |
+| Bash      | Script Bash executable |
 
 ## Dependencias
 

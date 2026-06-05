@@ -1,0 +1,23 @@
+🚀 **Projects** - CLI para crear proyectos en segundos
+
+Una herramienta de línea de comandos desarrollada en Python que te permite scaffoldear proyectos de Node.js, Python y Go con las frameworks más populares del mercado.
+
+⚡ **Frameworks soportados:**
+- 🌐 **Astro** - Con Tailwind CSS y Node adapter
+- ⚡ **Vite** - Configuración rápida con Tailwind
+- 🅰️ **Angular** - Estructura completa Angular
+- 🐍 **UV** - Proyectos Python con UV
+- 📦 **Rspack** - Bundler de alto rendimiento
+- 🎨 **Flowbite** - UI components
+- 🐹 **Go** - Proyectos en Go
+- 🍞 **Bun** - Runtime JavaScript ultrarrápido
+- 🖥️ **Bash** - Scripts y utilidades
+
+🛠️ **Tecnologías:**
+- Python con InquirerPy para interfaz interactiva
+- Halo para feedback visual con spinners
+- Gestión de dependencias con UV
+
+💡 Ideal para desarrolladores que buscan inicializar proyectos rápidamente con las mejores prácticas y configuraciones predefinidas.
+
+#Python #CLI #JavaScript #NodeJS #Go #Astro #Vite #Angular #DevTools #Productividad #DesarrolloWeb #OpenSource #100DaysOfCode #Programming #TechCommunity
