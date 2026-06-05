@@ -8,10 +8,11 @@ from comands.flowbite import flowbite
 from comands.bun import bun
 from comands.go import go
 from comands.bash import bash
+from comands.banner import banner
 
 
 def main():
-
+    banner()
     opciones = {
         "Astro": astro,
         "Vite": vite,
