@@ -1,5 +1,6 @@
 from comands.utils import spinner, comprobar, folder
 from InquirerPy import prompt
+import os
 
 
 def bun():
@@ -17,5 +18,6 @@ def bun():
         },
     ]
     result = prompt(instalar)
+    os.mkdir(result["folder"])
     folder(result["folder"])
     spinner(f"bun init {result['folder']}")
